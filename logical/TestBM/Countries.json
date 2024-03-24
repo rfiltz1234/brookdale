@@ -1,0 +1,157 @@
+{
+  "logicalTable" : {
+    "name" : "Countries",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "COUNTRY_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_ISO_CODE",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_ISO_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_NAME_HIST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_NAME_HIST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_REGION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_REGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_REGION_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_REGION_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_SUBREGION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_SUBREGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_SUBREGION_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_SUBREGION_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "COUNTRIES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:myADW2.SH.COUNTRIES.COUNTRY_TOTAL_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "COUNTRIES",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:myADW2.SH.COUNTRIES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

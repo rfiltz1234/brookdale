@@ -1,0 +1,10 @@
+{
+  "subjectArea" : {
+    "name" : "BrookSales",
+    "tags" : [ "Sales", "Financial" ],
+    "sourceBusinessModel" : "businessModel:TestBM",
+    "tableOrder" : [ {
+      "name" : "presentationTable:BrookSales.Sales"
+    } ]
+  }
+}

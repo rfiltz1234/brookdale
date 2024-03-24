@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Sales",
+    "presentationColumns" : [ {
+      "name" : "Amount Sold",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.AMOUNT_SOLD"
+    } ]
+  }
+}
