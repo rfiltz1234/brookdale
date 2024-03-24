@@ -4,6 +4,11 @@
     "presentationColumns" : [ {
       "name" : "Amount Sold",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.AMOUNT_SOLD"
+    }, {
+      "name" : "Qty",
+      "description" : "Quantity Sold",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.QUANTITY_SOLD",
+      "alternateNames" : [ "Quantity" ]
     } ]
   }
 }
