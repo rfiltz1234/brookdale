@@ -4,6 +4,9 @@
     "presentationColumns" : [ {
       "name" : "Amount Sold",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.AMOUNT_SOLD"
+    },{
+      "name" : "Channel ID",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.CHANNEL_ID"
     }, {
       "name" : "Qty",
       "description" : "Quantity Sold",
