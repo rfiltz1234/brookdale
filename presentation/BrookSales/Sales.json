@@ -7,6 +7,9 @@
     },{
       "name" : "Channel ID",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.CHANNEL_ID"
+    },{
+      "name" : "Promo ID",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.PROMO_ID"
     }, {
       "name" : "Qty",
       "description" : "Quantity Sold",
