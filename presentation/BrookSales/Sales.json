@@ -4,10 +4,10 @@
     "presentationColumns" : [ {
       "name" : "Amount Sold",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.AMOUNT_SOLD"
-    },{
+    }, {
       "name" : "Channel ID",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.CHANNEL_ID"
-    },{
+    }, {
       "name" : "Promo ID",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.PROMO_ID"
     }, {
@@ -15,6 +15,12 @@
       "description" : "Quantity Sold",
       "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.QUANTITY_SOLD",
       "alternateNames" : [ "Quantity" ]
+    }, {
+      "name" : "Time ID",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Sales.TIME_ID"
+    }, {
+      "name" : "Product Name",
+      "sourceLogicalColumn" : "logicalColumn:TestBM.Products.PROD_NAME"
     } ]
   }
 }
